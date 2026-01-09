@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>玄秘织命者</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'cinzel': ['Cinzel', 'serif'],
+              'lora': ['Lora', 'serif'],
+              'noto-sans-sc': ['Noto Sans SC', 'sans-serif'], // Added Noto Sans SC for Chinese
+            },
+            animation: {
+              'subtle-pulse': 'subtlePulse 2s infinite ease-in-out',
+              'orb-glow': 'orbGlow 3s infinite alternate',
+              'paper-appear': 'paperAppear 0.7s ease-out forwards',
+            },
+            keyframes: {
+              subtlePulse: {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '.7' },
+              },
+              orbGlow: {
+                '0%': { boxShadow: '0 0 15px 5px rgba(236, 72, 153, 0.5), 0 0 30px 10px rgba(168, 85, 247, 0.4)' },
+                '100%': { boxShadow: '0 0 25px 10px rgba(236, 72, 153, 0.7), 0 0 40px 15px rgba(168, 85, 247, 0.6)' },
+              },
+              paperAppear: {
+                '0%': { opacity: '0', transform: 'translateY(20px) scale(0.95)' },
+                '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-uFq6UFCf.js"></script>
+</head>
+  <body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-800 text-indigo-100 font-noto-sans-sc">
+    <div id="root"></div>
+  </body>
+</html>
